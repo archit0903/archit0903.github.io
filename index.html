@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+
+      $(window).scroll(function() {
+        $(".fade-in").each(function() {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          if (position < scroll + $(window).height()) {
+            $(this).addClass("visible");
+          }
+        });
+      });
+    });
+  </script>
+  <title>Archit Archit - Software Developer Portfolio</title>
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Archit Archit</h1>
+    <p class="lead">Software Developer</p>
+  </header>
+
+  <div class="container mt-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#summary">Summary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#highlights">Highlights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technical-skills">Technical Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#volunteer-experience">Volunteer Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="summary">
+      <h2>Summarizing Statement</h2>
+      <p>Highly motivated individual seeking a software position with proficiency in Java, C, C++, Python, and hands-on experience in Spring, .NET, React, and Node.js frameworks. Committed to applying strong analytical and problem-solving skills to contribute to innovative software solutions. Eager to gain practical experience and always stay updated with new technologies. Committed to enhancing my skills under the mentorship of industry experts.</p>
+    </section>
+
+    <section id="highlights">
+      <h2>Highlights of Qualifications</h2>
+      <ul>
+        <li>Attained a 100% score in Mathematics for Computer Studies and Discrete Math & Statistics.</li>
+        <li>Consistent recognition for academic excellence, named on the Dean's List for both Fall 2022 and Winter 2023 terms.</li>
+        <li>Maintained an impressive overall GPA of 85.2%, showcasing dedication to academic success.</li>
+        <li>Software development proficiency in Python (100%), Java (93%), and .NET (94%).</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="font-weight-bold">Computer System Technology - Software Development</p>
+          <p>Mohawk College, Hamilton, ON</p>
+          <ul>
+            <li>Currently enrolled in Semester 4 of the 3-year Advanced Diploma co-op program.</li>
+            <li>Maintaining an overall GPA of 85.2%.</li>
+            <li>Honored twice on the Dean's List for the first two semesters.</li>
+            <li>Anticipated Graduation Date: December 2025.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming Languages – Java, C/C++, C#, Python.</li>
+        <li>Technologies – HTML, CSS, JavaScript, Bootstrap.</li>
+        <li>Database Management – MySQL, MongoDB.</li>
+        <li>In-Learning – ReactJS, NodeJS, Spring framework.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Portfolio Website</h5>
+          <p class="card-text">Crafted and launched portfolio, a dynamic website showcasing my skills, projects, and professional journey with a modern and user-friendly design.</p>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Java Documentation Website</h5>
+          <p class="card-text">Spearheaded the creation of javapassdocs, a comprehensive Java documentation website, as a PASS Leader at Mohawk College, dedicated to supporting lower semester students in mastering Java.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PASS Leader (JAVA) - Mohawk College, Hamilton, ON (January 2024 - Present)</h5>
+          <ul>
+            <li>Leading and facilitating weekly study group sessions comprising 20+ lower-semester students, promoting collaboration and academic success.</li>
+            <li>Collaborating with faculty members and administrators to align peer mentoring initiatives with academic goals and objectives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Warehouse Picker - Amazon Fulfillment Center, Hamilton, ON (November 2022 - July 2023)</h5>
+          <ul>
+            <li>Met or exceeded daily targets of picking 4000 packages while maintaining a strong focus on quality above 99%.</li>
+            <li>Collaborated with team members and supervisors to ensure a smooth workflow and achieve departmental goals.</li>
+            <li>Adapted quickly to changes in inventory and product locations, contributing to the overall efficiency of the warehouse.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteer-experience">
+      <h2>Volunteer Experience</h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Orientation Ambassador - Mohawk College, Hamilton, ON (September 2023)</h5>
+          <ul>
+            <li>Actively employed active listening and persuasion skills to assist over 50 students in understanding differing viewpoints, resolving conflicts, solving problems, and fostering positive change.</li>
+            <li>Applied intercultural competencies, communication skills, and a keen awareness of global issues to support the development community.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Executive at The New Developers Club - Mohawk College, Hamilton, ON (January 2024)</h5>
+          <ul>
+            <li>Contributing to the planning and execution of events, workshops, and initiatives aimed at fostering a collaborative and learning-oriented environment for aspiring developers.</li>
+            <li>Played a key role in organizing networking sessions and industry engagement events, providing club members with valuable opportunities to connect with professionals and gain insights into the field of software development.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="mt-5">
+        <h2>Resume</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Archit Archit - Resume</h5>
+            <p class="card-text">Click the button below to view or download my resume.</p>
+            <a href="https://drive.google.com/file/d/1kvzw-_vx-3YMhmj7UJ2P-MCLBKqYnYAg/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View/Download Resume</a>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <address>
+        <p>Location: Hamilton, ON</p>
+        <p>Phone: +1 (647)-588-6756</p>
+        <p>Email: archit.archit@mohawkcollege.ca</p>
+        <p>Portfolio: <a href="http://aroraarchit.com">aroraarchit.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/archit-archit-8ba535247/">LinkedIn Profile</a></p>
+      </address>
+    </section>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>This website was created temporarily for an assignment. You can find my actual portfolio website <a href="#">here</a>.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
