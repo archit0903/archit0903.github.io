@@ -4,12 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .fade-in {
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 2rem 0;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2, h3, h4, h5, h6 {
+      color: #007bff;
+      animation: fadeIn 1s ease-out;
+    }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: slideInDown 1s ease-out;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .navbar-nav a {
+      color: #333;
+    }
+
+    section {
+      padding: 40px 0;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    .animated-list li {
       opacity: 0;
-      transition: opacity 0.8s ease-in-out;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      animation: slideInUp 1s ease-out;
+    }
+
+    footer a {
+      color: #ffc107;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-40px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(40px);
+      }
+      to {
+        transform: translateY(0);
+      }
     }
   </style>
+
 
   <script>
     $(document).ready(function() {
@@ -211,7 +318,7 @@
   </div>
 
   <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>This website was created temporarily for an assignment. You can find my actual portfolio website <a href="#">here</a>.</p>
+    <p>This website was created temporarily for an assignment. You can find my actual portfolio website <a href="http://aroraarchit.com">here</a>.</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
