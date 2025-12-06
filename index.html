@@ -1,117 +1,238 @@
+[file name]: index.html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HI!</title>
-    <link rel="stylesheet" href="src/styles.css">
-</head>
-<body>
-    <svg version="1.1" class="wave"
-         xlmns="http://www.w3.org/200/svg">
-        <path
-                d="
-                M0 67
-                C 273,183
-                  822, -40
-                  1920,106
-                V 600
-                H 0
-                V 67
-                Z
-                ">
-            <animate
-                    repeatCount="indefinite"
-                    attributeName="d"
-                    dur="60s"
-                    attributeType="XML"
-                    values="
-                        M0 77
-                        C 473, 283
-                          822, -40
-                          1920, 116
-                          V 600
-                          H 0
-                          V 300
-                          Z;
-                          M0 77
-                          C 473, -40
-                          1222, 283
-                          1920, 136
-                          V 600
-                          H 0
-                          V 300
-                          Z;
-                          M0 77
-                          C 973, 260
-                          1722, -53
-                          1920, 120
-                          V 600
-                          H 0
-                          V 300
-                          Z;
-                          M0 77
-                          C 473, 283
-                          822, -40
-                          1920, 116
-                          V 600
-                          H 0
-                          V 300
-                          Z">
-            </animate>
-        </path>
-    </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archit Arora | Full Stack Developer</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-background"></div>
 
-    <header>
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="src/pages/contact.html"><li>Contact</li></a>
+    <!-- Header Navigation -->
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <span class="logo">A</span>
+          <span class="brand-name">Archit Arora</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="src/pages/about.html" class="nav-link">About</a></li>
+          <li><a href="src/pages/work.html" class="nav-link">Work</a></li>
+          <li><a href="src/pages/stack.html" class="nav-link">Stack</a></li>
+          <li>
+            <a href="src/pages/contact.html" class="nav-link contact-btn"
+              >Contact</a
+            >
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
 
-    <section class="hero-section">
-        <h1>A<span class="light-text">&</span>A</h1>
-        <div class="socials">
-            <div class="social">
-                <a href="https://twitter.com/ArchitA48120"  target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 40 40"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://github.com/archit0903"  target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 40 40"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/archit-arora-8ba535247/"  target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 40 40"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                </a>
-            </div>
+    <!-- Hero Section -->
+    <main class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="gradient-text">Full Stack Developer</span>
+            <span class="hero-subtitle">& Software Developer</span>
+          </h1>
+          <p class="hero-description">
+            Building scalable, enterprise-grade applications with modern web
+            technologies. Specializing in end-to-end development from concept to
+            deployment.
+          </p>
+          <div class="hero-buttons">
+            <a href="src/pages/work.html" class="btn btn-primary"
+              >View My Projects</a
+            >
+            <a href="src/pages/about.html" class="btn btn-secondary"
+              >About Me</a
+            >
+          </div>
         </div>
+        <div class="hero-image">
+          <div class="code-snippet">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-title">archit.js</span>
+            </div>
+            <pre class="code-content"><code>
+<span class="code-keyword">const</span> archit = {
+    role: <span class="code-string">"Full Stack Developer"</span>,
+    stack: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>],
+    databases: [<span class="code-string">"MongoDB"</span>, <span class="code-string">"MySQL"</span>, <span class="code-string">"PostgreSQL"</span>],
+    cloud: <span class="code-string">"AWS, Docker, Kubernetes"</span>,
+    experience: <span class="code-string">"Software Developer Coop"</span>,
+    education: <span class="code-string">"Mohawk College"</span>
+};
 
+<span class="code-comment">// Building scalable solutions, one commit at a time</span>
+<span class="code-function">buildEnterpriseApps</span>(archit);
+                    </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a
+          href="https://github.com/archit0903"
+          target="_blank"
+          class="social-icon"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/archit-arora-8ba535247/"
+          target="_blank"
+          class="social-icon"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://twitter.com/ArchitA48120"
+          target="_blank"
+          class="social-icon"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="mailto:architarora39@gmail.com"
+          class="social-icon"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span class="scroll-text">Explore More</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </main>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+      <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-react skill-icon"></i>
+            <h3>Frontend</h3>
+            <p>React, Next.js, TypeScript</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-server skill-icon"></i>
+            <h3>Backend</h3>
+            <p>Node.js, Express, Java, Python</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>Databases</h3>
+            <p>MongoDB, MySQL, PostgreSQL</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-cloud skill-icon"></i>
+            <h3>DevOps & Cloud</h3>
+            <p>AWS, Docker, Kubernetes</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <h2>MERN Stack Developer</h2>
-        <div class="options">
-            <a href="src/pages/work.html"><h3>WORK</h3></a>
-            <a href="src/pages/about.html"><h3>ME</h3></a>
-            <a href="src/pages/stack.html"><h3>STACK</h3></a>
+    <!-- Experience Highlights -->
+    <section class="experience-highlights">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Software Developer Coop</h3>
+            <p>Ministry of Public and Business Delivery</p>
+            <p class="experience-detail">
+              Developed internal applications using JavaScript, React, Node.js,
+              and SQL
+            </p>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Full Stack Projects</h3>
+            <p>Enterprise Applications</p>
+            <p class="experience-detail">
+              Built scalable web applications with React, Node.js, and modern
+              databases
+            </p>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Computer Science Student</h3>
+            <p>Mohawk College</p>
+            <p class="experience-detail">
+              Associate Diploma in Software Development with focus on enterprise
+              technologies
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <ul>
-            <a href="https://twitter.com/ArchitA48120" target="_blank">
-                <li>Twitter</li>
-            </a>
-            <a href="https://github.com/archit0903" target="_blank">
-                <li>GitHub</li>
-            </a>
-            <a href="https://www.linkedin.com/in/archit-arora-8ba535247/" target="_blank">
-                <li>LinkedIn</li>
-            </a>
-        </ul>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>Archit Arora</h2>
+          <p>Full Stack Developer & Software Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="src/pages/work.html">Work</a>
+          <a href="src/pages/about.html">About</a>
+          <a href="src/pages/stack.html">Stack</a>
+          <a href="src/pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-envelope"></i> architarora39@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +1 (365) 999-9364</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 Archit Arora. All rights reserved.</p>
+          <p>Built with ❤️ and modern web technologies.</p>
+        </div>
+      </div>
     </footer>
-    
 
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>

@@ -1,105 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Archit's Work</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <header>
-    <ul>
-      <a href="../../index.html"><li>Home</li></a>
-      <a href="contact.html"><li>Contact</li></a>
-    </ul>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Work | Archit Arora</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <span class="logo">A</span>
+          <a href="../../index.html" class="brand-name">Archit Arora</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="work.html" class="nav-link active">Work</a></li>
+          <li><a href="stack.html" class="nav-link">Stack</a></li>
+          <li>
+            <a href="contact.html" class="nav-link contact-btn">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-  <section>
-    <h2 class="subtitle">work</h2>
-    <table class="work-details">
-      <tr>
-        <td>Collaborative Code Editor</td>
-        <td>
-          <p>Developed a real-time collaborative code editor with authentication, sessions, and execution support!</p>
-          <a href="https://workspace-editor.vercel.app/" target="_blank">Website</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Job Seek</td>
-        <td>
-          <p>Built a full stack app for making jobs, applying to jobs and all the good stuff!</p>
-          <a href="https://job-seek.netlify.app/" target="_blank">Website</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Tinder-Clone</td>
-        <td>
-          <p>Built a full stack tinder clone using React, Node.js, Express, and Mongo.</p>
-          <a href="https://tinder-clonex21.netlify.app/" target="_blank">Website</a>
-          <a href="https://github.com/archit0903/client-tinder" target="_blank">Client side Repository</a>
-          <a href="https://github.com/archit0903/tinder-backend" target="_blank">Server side Repository</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Pokemon</td>
-        <td>
-          <p>Built a Pokemon game with Tilded, HTML-canvas, Sprites, and Animations!</p>
-          <a href="https://pokeclone.netlify.app/" target="_blank">Website</a>
-          <a href="https://github.com/archit0903/pokemon" target="_blank">Github Repository</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Space Fighter</td>
-        <td>
-          <p>Built a 2-d Space fighter point and click game with html-canvas!</p>
-          <a href="https://12xghostking.github.io/spacefighter/" target="_blank">Website</a>
-          <a href="https://github.com/archit0903/spacefighter" target="_blank">Github Repository</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Candy Crush</td>
-        <td>
-          <p>Made a classic candy crush game with ReactJS!</p>
-          <a href="https://12xghostking.github.io/candycrush/" target="_blank">Website</a>
-          <a href="https://github.com/archit0903/candy-crush" target="_blank">Github Repository</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Knapsack Calculator</td>
-        <td>
-          <p>Fractional Knapsack Calculator with three.JS frontend!</p>
-          <a href="https://knapsack20103022-30-87.netlify.app/" target="_blank">Website</a>
-          <a href="https://github.com/archit0903/knapp" target="_blank">Github Repository</a>
-        </td>
-      </tr>
-        <td>Canvas Pieces</td>
-        <td>
-          <p>Some canvas pieces made on HTML-Canvas</p>
-          <a href="https://12xghostking.github.io/collision/" target="_blank">Collision</a>
-          <a href="https://12xghostking.github.io/gravity/" target="_blank">Gravity</a>
-          <a href="https://12xghostking.github.io/canvas/" target="_blank">Canvas</a>
-        </td>
-      </tr>
-    </table>
-  </section>
+    <!-- Work Section -->
+    <main class="work-container">
+      <div class="work-hero">
+        <h1 class="page-title">My <span class="gradient-text">Work</span></h1>
+        <p class="page-subtitle">
+          Projects that showcase my skills and passion
+        </p>
+      </div>
 
-  <section class="resume-download">
-    <h2>Download My Resume</h2>
-    <a href="https://drive.google.com/file/d/1PZMwR0QDkxPZlNjsz5KUbUai_D2oqgDL/view?usp=sharing" download>Click here to download my resume</a>
-  </section>
+      <!-- Featured Projects -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card featured">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Full Stack</span>
+              <span class="project-tag">Real-time</span>
+              <span class="project-tag">Collaborative</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Collaborative Code Editor</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Collaborative Code Editor</h3>
+            <p class="project-description">
+              A real-time collaborative code editor with authentication,
+              sessions, and code execution support. Multiple users can code
+              together simultaneously with live updates.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Socket.io</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://workspace-editor.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit090301/workspace-editor"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
 
-  <footer class="sub-pages-footer">
-    <ul>
-      <a href="https://twitter.com/ArchitA48120" target="_blank">
-          <li>Twitter</li>
-      </a>
-      <a href="https://github.com/archit0903" target="_blank">
-          <li>GitHub</li>
-      </a>
-      <a href="https://archit0903.github.io/src/pages/inkedin.com/in/archit-archit-8ba535247/" target="_blank">
-          <li>LinkedIn</li>
-      </a>
-    </ul>
-  </footer>
-</body>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Full Stack</span>
+              <span class="project-tag">Job Portal</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Job Seek Platform</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Job Seek Platform</h3>
+            <p class="project-description">
+              A comprehensive job portal where employers can post jobs and
+              candidates can apply. Features include user profiles, job
+              filtering, and application tracking.
+            </p>
+            <div class="project-tech">
+              <span>MERN Stack</span>
+              <span>JWT Auth</span>
+              <span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://job-seek.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit0903"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Game</span>
+              <span class="project-tag">Canvas</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Pokemon Game</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Pokemon Game</h3>
+            <p class="project-description">
+              A browser-based Pokemon game built with HTML Canvas, featuring
+              sprite animations, tile-based maps, and interactive gameplay
+              elements.
+            </p>
+            <div class="project-tech">
+              <span>HTML Canvas</span>
+              <span>JavaScript</span>
+              <span>Sprite Animation</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://pokeclone.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit0903/pokemon"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Clone</span>
+              <span class="project-tag">Full Stack</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Tinder Clone</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Tinder Clone</h3>
+            <p class="project-description">
+              A full-stack dating application clone with user profiles, matching
+              algorithm, and real-time messaging functionality.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Express</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://tinder-clonex21.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit0903/client-tinder"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Frontend
+              </a>
+              <a
+                href="https://github.com/archit0903/tinder-backend"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Backend
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Game</span>
+              <span class="project-tag">Canvas</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Space Fighter Game</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Space Fighter Game</h3>
+            <p class="project-description">
+              A 2D space shooter game built with HTML Canvas featuring
+              point-and-click mechanics, enemy AI, and progressive difficulty
+              levels.
+            </p>
+            <div class="project-tech">
+              <span>HTML Canvas</span>
+              <span>JavaScript</span>
+              <span>Game Physics</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://12xghostking.github.io/spacefighter/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit0903/spacefighter"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-tags">
+              <span class="project-tag">Game</span>
+              <span class="project-tag">React</span>
+            </div>
+            <div class="project-overlay">
+              <h3>Candy Crush Clone</h3>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Candy Crush Clone</h3>
+            <p class="project-description">
+              A React-based implementation of the classic Candy Crush game with
+              matching mechanics, score tracking, and responsive design.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>CSS Grid</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://12xghostking.github.io/candycrush/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/archit0903/candy-crush"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canvas Experiments Section -->
+      <div class="experiments-section">
+        <h2 class="section-title">Canvas Experiments</h2>
+        <p class="section-subtitle">
+          Interactive visualizations and animations built with HTML Canvas
+        </p>
+
+        <div class="experiments-grid">
+          <div class="experiment-card">
+            <h3>Collision Simulation</h3>
+            <p>Physics-based collision detection and response system</p>
+            <a
+              href="https://12xghostking.github.io/collision/"
+              target="_blank"
+              class="experiment-link"
+            >
+              View Simulation <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="experiment-card">
+            <h3>Gravity Simulation</h3>
+            <p>Interactive gravity and particle system visualization</p>
+            <a
+              href="https://12xghostking.github.io/gravity/"
+              target="_blank"
+              class="experiment-link"
+            >
+              View Simulation <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="experiment-card">
+            <h3>Canvas Animations</h3>
+            <p>Collection of creative animations and visual effects</p>
+            <a
+              href="https://12xghostking.github.io/canvas/"
+              target="_blank"
+              class="experiment-link"
+            >
+              View Animations <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume Section -->
+      <div class="resume-section">
+        <div class="resume-content">
+          <div class="resume-text">
+            <h2>Want to know more?</h2>
+            <p>
+              Download my complete resume for detailed information about my
+              experience, education, and skills.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a
+              href="https://drive.google.com/file/d/1PZMwR0QDkxPZlNjsz5KUbUai_D2oqgDL/view?usp=sharing"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-eye"></i> View Resume
+            </a>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1PZMwR0QDkxPZlNjsz5KUbUai_D2oqgDL"
+              download
+              class="btn btn-secondary"
+            >
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>Have a project in mind?</h2>
+          <p>Let's discuss how we can work together</p>
+        </div>
+        <div class="footer-cta">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://github.com/archit0903"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/archit-arora-8ba535247/"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://twitter.com/ArchitA48120"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            &copy; 2023 Archit Arora. All projects featured are personal works.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
 </html>
